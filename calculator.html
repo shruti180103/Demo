@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+<div class="container calculator-container">
+    <div class="calculator">
+        <input type="text" id="display" class="form-control mb-2" readonly>
+
+        <div class="row">
+            <div class="col"><button onclick="clearDisplay()" class="btn btn-danger btn-block">C</button></div>
+            <div class="col"><button onclick="appendToDisplay('/')" class="btn btn-primary btn-block">/</button></div>
+            <div class="col"><button onclick="appendToDisplay('*')" class="btn btn-primary btn-block">*</button></div>
+            <div class="col"><button onclick="calculate()" class="btn btn-success btn-block">=</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button onclick="appendToDisplay('7')" class="btn btn-light btn-block">7</button></div>
+            <div class="col"><button onclick="appendToDisplay('8')" class="btn btn-light btn-block">8</button></div>
+            <div class="col"><button onclick="appendToDisplay('9')" class="btn btn-light btn-block">9</button></div>
+            <div class="col"><button onclick="appendToDisplay('-')" class="btn btn-primary btn-block">-</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button onclick="appendToDisplay('4')" class="btn btn-light btn-block">4</button></div>
+            <div class="col"><button onclick="appendToDisplay('5')" class="btn btn-light btn-block">5</button></div>
+            <div class="col"><button onclick="appendToDisplay('6')" class="btn btn-light btn-block">6</button></div>
+            <div class="col"><button onclick="appendToDisplay('+')" class="btn btn-primary btn-block">+</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button onclick="appendToDisplay('1')" class="btn btn-light btn-block">1</button></div>
+            <div class="col"><button onclick="appendToDisplay('2')" class="btn btn-light btn-block">2</button></div>
+            <div class="col"><button onclick="appendToDisplay('3')" class="btn btn-light btn-block">3</button></div>
+            <div class="col"><button onclick="appendToDisplay('')" class="btn btn-secondary btn-block">&nbsp;</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button onclick="appendToDisplay('0')" class="btn btn-light btn-block">0</button></div>
+            <div class="col"><button onclick="appendToDisplay('.')" class="btn btn-light btn-block">.</button></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
