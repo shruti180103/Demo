@@ -43,4 +43,3 @@ function percentage() {
         display.value = 'Error';
     }
 }
-//hi
